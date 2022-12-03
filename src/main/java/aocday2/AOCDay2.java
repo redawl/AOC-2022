@@ -4,8 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.FileUtils;
 
-import java.util.EnumMap;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -30,15 +28,20 @@ public class AOCDay2 {
         }
 
         Shape lose(Shape shape){
+            Shape loseMove = PAPER;
             switch (shape){
                 case ROCK:
-                    return SCISSORS;
+                    loseMove = SCISSORS;
+                    break;
                 case PAPER:
-                    return ROCK;
+                    loseMove = ROCK;
+                    break;
                 case SCISSORS:
-                    return PAPER;
+                    loseMove = PAPER;
+                    break;
             }
-            throw new RuntimeException("Impossible");
+
+            return loseMove;
         }
 
         Shape win(Shape shape){
@@ -54,30 +57,40 @@ public class AOCDay2 {
         }
 
         int outcome(Shape shape){
-            if(this.value == shape.value) return 3;
-            switch (this){
-                case ROCK:
-                    return shape == PAPER ? 0 : 6;
-                case PAPER:
-                    return shape == SCISSORS ? 0 : 6;
-                case SCISSORS:
-                    return shape == ROCK ? 0 : 6;
-                default:
-                    logger.error("Impossible!");
+            int outcome = 0;
+            if(this.value == shape.value) {
+                outcome = 3;
+            } else {
+                switch (this) {
+                    case ROCK:
+                        outcome = shape == PAPER ? 0 : 6;
+                        break;
+                    case PAPER:
+                        outcome = shape == SCISSORS ? 0 : 6;
+                        break;
+                    case SCISSORS:
+                        outcome = shape == ROCK ? 0 : 6;
+                        break;
+                }
             }
-            throw new RuntimeException("Impossible!");
+
+            return outcome;
         }
 
         int outcome2(Shape shape){
+            int outcome = 0;
             switch (this){
                 case ROCK:
-                    return lose(shape).value;
+                    outcome = lose(shape).value;
+                    break;
                 case PAPER:
-                    return 3 + shape.value;
+                    outcome = 3 + shape.value;
+                    break;
                 case SCISSORS:
-                    return 6 + win(shape).value;
+                    outcome = 6 + win(shape).value;
             }
-            throw new RuntimeException("Impossible!");
+
+            return outcome;
         }
     }
 

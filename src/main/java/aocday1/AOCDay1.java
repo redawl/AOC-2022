@@ -25,7 +25,6 @@ public class AOCDay1 {
         for(int i = 0; i < 3; i++){
             int max = caloriesPerElf.stream().max(Integer::compare)
                     .orElseThrow(() -> new RuntimeException("Failure :("));
-            logger.info("Top {} most calories: {}", i + 1, max);
             totalTopThree += max;
             caloriesPerElf.remove( (Object) max);
         }
