@@ -4,10 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.FileUtils;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class AOCDay4 {
@@ -18,14 +19,23 @@ public class AOCDay4 {
     public static int challenge1(List<String> assignments){
         AtomicInteger total = new AtomicInteger();
 
+        final Pattern rangePattern = Pattern.compile("(\\d+)-(\\d+),(\\d+)-(\\d+)");
         Consumer<String> oneContainsTheOther = assignment -> {
-            String [] ranges = assignment.split(",");
-            try {
-                int[] range1 = Arrays.stream(ranges[0].split("-")).mapToInt(Integer::parseInt).toArray();
-                int[] range2 = Arrays.stream(ranges[1].split("-")).mapToInt(Integer::parseInt).toArray();
+            Matcher assignmentMatcher = rangePattern.matcher(assignment);
 
-                if(oneInsideTheOther(range1, range2))
-                    total.addAndGet(1);
+            try {
+                if(assignmentMatcher.find()) {
+                    List<Integer> rangeNumbers = List.of(
+                            Integer.parseInt(assignmentMatcher.group(1)),
+                            Integer.parseInt(assignmentMatcher.group(2)),
+                            Integer.parseInt(assignmentMatcher.group(3)),
+                            Integer.parseInt(assignmentMatcher.group(4))
+                    );
+
+                    if ((rangeNumbers.get(0) >= rangeNumbers.get(2) && rangeNumbers.get(1) <= rangeNumbers.get(3))
+                            || (rangeNumbers.get(0) <= rangeNumbers.get(2) && rangeNumbers.get(1) >= rangeNumbers.get(3)))
+                        total.addAndGet(1);
+                }
             } catch (NumberFormatException ex){
                 throw new InvalidRangeFormatException();
             }
@@ -38,15 +48,23 @@ public class AOCDay4 {
 
     public static int challenge2(List<String> assignments){
         AtomicInteger total = new AtomicInteger();
+        final Pattern rangePattern = Pattern.compile("(\\d+)-(\\d+),(\\d+)-(\\d+)");
 
         Consumer<String> oneOverlapsTheOther = assignment -> {
-            String [] ranges = assignment.split(",");
-            try {
-                int [] range1 = Arrays.stream(ranges[0].split("-")).mapToInt(Integer::parseInt).toArray();
-                int [] range2 = Arrays.stream(ranges[1].split("-")).mapToInt(Integer::parseInt).toArray();
+            Matcher assignmentMatcher = rangePattern.matcher(assignment);
 
-                if(checkForSimpleOverlap(range1, range2))
-                    total.addAndGet(1);
+            try {
+                if(assignmentMatcher.find()) {
+                    List<Integer> rangeNumbers = List.of(
+                            Integer.parseInt(assignmentMatcher.group(1)),
+                            Integer.parseInt(assignmentMatcher.group(2)),
+                            Integer.parseInt(assignmentMatcher.group(3)),
+                            Integer.parseInt(assignmentMatcher.group(4))
+                    );
+
+                    if (!((rangeNumbers.get(1) < rangeNumbers.get(2)) || (rangeNumbers.get(0) > rangeNumbers.get(3))))
+                        total.addAndGet(1);
+                }
             } catch (NumberFormatException ex){
                 throw new InvalidRangeFormatException();
             }
@@ -55,27 +73,6 @@ public class AOCDay4 {
         assignments.forEach(oneOverlapsTheOther);
 
         return total.get();
-    }
-
-    /**
-     * Check if two arrays overlap in any way
-     * @param range1 First list to compare
-     * @param range2 Second list to compare
-     * @return True if they overlap, false if they don't
-     */
-    private static boolean checkForSimpleOverlap(int [] range1, int [] range2){
-        return !((range1[1] < range2[0]) || (range1[0] > range2[1]));
-    }
-
-    /**
-     * Check if one range is inside the other
-     * @param range1 First range to check
-     * @param range2 Second range to check
-     * @return True if one is inside the other, false if not
-     */
-    private static boolean oneInsideTheOther(int [] range1, int [] range2){
-        return (range1[0] >= range2[0] && range1[1] <= range2[1])
-                || (range1[0] <= range2[0] && range1[1] >= range2[1]);
     }
 
     public static void main(String [] args){
