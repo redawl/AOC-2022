@@ -4,14 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b4c0bb-4998-4f52-8a4f-b7054bdfcfcf" name="Changes" comment="" />
+    <list default="true" id="b3b4c0bb-4998-4f52-8a4f-b7054bdfcfcf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aocday12/GridSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aocday12/GridSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aocday9/InvalidDirectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aocday9/InvalidDirectionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aocday9/InvalidDistanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aocday9/InvalidDistanceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aocday9/Knot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aocday9/Knot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/challenge12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/challenge12.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2IHSpgrdBTdZRd7zhO9RyR24JEp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,9 +47,117 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/redawl/projects/GradeCalc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/aocday1" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AOCDay11">
+    <configuration name="AOCDay11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aocday11.AOCDay11" />
+      <module name="AOC2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aocday11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AOCDay9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aocday9.AOCDay9" />
+      <module name="AOC2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aocday9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AOCDay11Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AOC2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aocday11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aocday11" />
+      <option name="MAIN_CLASS_NAME" value="aocday11.AOCDay11Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AOCDay9Tests.exampleCaseShouldPassChallenge2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AOC2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aocday9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aocday9" />
+      <option name="MAIN_CLASS_NAME" value="aocday9.AOCDay9Tests" />
+      <option name="METHOD_NAME" value="exampleCaseShouldPassChallenge2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aocday9 in AOC2022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AOC2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aocday9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aocday9" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AOCDay9" />
+      <item itemvalue="Application.AOCDay11" />
+      <item itemvalue="JUnit.AOCDay9Tests.exampleCaseShouldPassChallenge2" />
+      <item itemvalue="JUnit.aocday9 in AOC2022" />
+      <item itemvalue="JUnit.AOCDay11Tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AOCDay11" />
+        <item itemvalue="JUnit.AOCDay11Tests" />
+        <item itemvalue="Application.AOCDay9" />
+        <item itemvalue="JUnit.aocday9 in AOC2022" />
+        <item itemvalue="JUnit.AOCDay9Tests.exampleCaseShouldPassChallenge2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,8 +166,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669837201614</updated>
+      <workItem from="1669837202855" duration="988000" />
+      <workItem from="1669839696014" duration="18684000" />
+      <workItem from="1669949580354" duration="9623000" />
+      <workItem from="1670015948244" duration="348000" />
+      <workItem from="1670016305330" duration="612000" />
+      <workItem from="1670016926044" duration="3649000" />
+      <workItem from="1670043544794" duration="16908000" />
+      <workItem from="1670193087963" duration="1178000" />
+      <workItem from="1670206381552" duration="1983000" />
+      <workItem from="1670208844019" duration="119000" />
+      <workItem from="1670219282252" duration="17469000" />
+      <workItem from="1670284032401" duration="2900000" />
+      <workItem from="1670290905685" duration="739000" />
+      <workItem from="1670336558001" duration="3205000" />
+      <workItem from="1670369176535" duration="807000" />
+      <workItem from="1670371480553" duration="70000" />
+      <workItem from="1670380867578" duration="599000" />
+      <workItem from="1670427646654" duration="3002000" />
+      <workItem from="1670431290319" duration="16775000" />
+      <workItem from="1670520887565" duration="1678000" />
+      <workItem from="1670533692759" duration="10000" />
+      <workItem from="1670533843590" duration="4516000" />
+      <workItem from="1670540231980" duration="1619000" />
+      <workItem from="1670542115739" duration="7377000" />
+      <workItem from="1670622708003" duration="1188000" />
+      <workItem from="1670627470266" duration="14676000" />
+      <workItem from="1670730583080" duration="27015000" />
+      <workItem from="1670856158284" duration="16326000" />
+      <workItem from="1670893034209" duration="840000" />
+      <workItem from="1670983551030" duration="13000" />
+      <workItem from="1670987353462" duration="7000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -47,5 +213,40 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="19" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/aocday8/AOCDay8.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/aocday7/AOCDay7.java</url>
+          <line>97</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/aocday11/AOCDay11.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AOC2022$All_in_AOC2022.ic" NAME="All in AOC2022 Coverage Results" MODIFIED="1670101708983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
